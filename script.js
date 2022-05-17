@@ -1,6 +1,7 @@
 const $sideBar = document.querySelector(".side-navigation")
 const $menuIcon = document.querySelector(".menu-icon")
 const $crossIcon = document.querySelector(".cross-icon")
+const $naveLinks = document.querySelector(".id")
 
 function myfunction(x){
     if (x.matches) { // If media query matches
@@ -8,6 +9,9 @@ function myfunction(x){
         $menuIcon.style.display = "initial"
         $sideBar.style.top = "-100%"
         
+        $naveLinks.addEventListener("click", function(){
+            $sideBar.style.top = "-100%"
+        })
         $menuIcon.addEventListener("click", function(){
             $sideBar.style.top = "65px"
             $sideBar.style.transition = "all 0.4s ease 0s"
