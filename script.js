@@ -9,9 +9,6 @@ function myfunction(x){
         $menuIcon.style.display = "initial"
         $sideBar.style.top = "-100%"
         
-        $naveLinks.addEventListener("click", function(){
-            $sideBar.style.top = "-100%"
-        })
         $menuIcon.addEventListener("click", function(){
             $sideBar.style.top = "65px"
             $sideBar.style.transition = "all 0.4s ease 0s"
@@ -20,6 +17,9 @@ function myfunction(x){
             // menuIcon.addEventListener("mouseout", function(){
             //     sideBar.style.left = "-100%"
             // })
+            $naveLinks.addEventListener("click", function(){
+                $sideBar.style.top = "-100%"
+            })
             $crossIcon.addEventListener("click", function(){
                 $sideBar.style.top = "-100%"
                 $menuIcon.style.display = "initial"
