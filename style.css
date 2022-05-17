@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("coding_background_1.jpg");
+    background-image: url("/images/coding_background_1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -43,7 +43,9 @@ body{
     column-gap: 15px;
 }
 .nave-items li{
-    padding: 8px 15px;
+    text-align: center;
+    width: 100px;
+    padding: 5px 0;
     border-left: solid 2px aliceblue;
     border-right: solid 2px aliceblue;
     border-radius: 8px;
@@ -82,7 +84,7 @@ body{
 .side-navigation .side-nave-items li{
     background-color: black;
     width: 100%;
-    padding: 25px 1.8vw;
+    padding: 15px 1.8vw;
     text-align: center;
     font-size: 20px;
     color: aliceblue;
@@ -105,7 +107,7 @@ body{
     font-size: 30px;
     width: 100%;
     text-align: center;
-    font-family: 'Patua One', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
 }
 .all-buttons{
     display: flex;
@@ -115,7 +117,8 @@ body{
 }
 .all-buttons .btn{
     margin: 10px 0;
-    padding: 10px 50px;
+    width: 200px;
+    padding: 10px 0;
     border-radius: 10px;
     background-color: rgba(255, 73, 73, 0.574);
     color: rgb(209, 233, 255);
@@ -166,6 +169,72 @@ body{
 }
 /*---------------------------------------------------------(END Of about.html)----------------*/
 
+/*----------------------------------------------------------(start)My Work 1-------------------*/
+
+.mw-1-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.mw-1-box{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    animation: 5s box infinite linear;
+}
+@keyframes box {
+    0%{
+        transform: rotateX(-45deg);
+    }
+    100%{
+        transform: rotateX(-45deg) rotateY(360deg);
+    }
+}
+.mw-1-box-parts{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 50% 50%;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(50, 8, 8);
+}
+#mw-1-box-part-1{
+    transform: translateX(100px) rotateY(90deg);
+}
+#mw-1-box-part-2{
+    transform: translateX(-100px) rotateY(-90deg);
+}
+#mw-1-box-part-3{
+    transform: translateZ(-100px) rotateY(-180deg);
+}
+#mw-1-box-part-4{
+    transform: translateZ(100px);
+}
+#mw-1-box-part-5{
+    transform: translateY(-100px) rotateX(-90deg);
+}
+#mw-1-box-part-6{
+    transform: translateY(100px) rotateX(90deg);
+}
+#mw-1-box-part-6-shadow{
+    transform: translateY(150px) rotateX(90deg);
+    background-color: rgba(255, 255, 255, 0.421);
+    border: none;
+    box-shadow: 0 0 100px 20px aliceblue;
+}
+
+/*----------------------------------------------------------(End) My work 1--------------------*/
+
 /*----------------------------------------(start)footer section for all pages------------*/
 .footer{
     width: 100%;
@@ -174,7 +243,6 @@ body{
     position: fixed;
     bottom: 0;
     z-index: 1;
-    padding: 10px 0;
 }
 .footer .social-links{
     list-style-type: none;
@@ -227,4 +295,39 @@ body{
         flex-direction: column;
     }
     /*-------------------------------------------------------------------------------*/
+}
+@media (max-width: 500px) {
+    .mw-1-box{
+        width: 100px;
+        height: 100px;
+    }
+    .mw-1-box-parts{
+        width: 100px;
+        height: 100px;
+    }
+    #mw-1-box-part-1{
+        transform: translateX(50px) rotateY(90deg);
+    }
+    #mw-1-box-part-2{
+        transform: translateX(-50px) rotateY(-90deg);
+    }
+    #mw-1-box-part-3{
+        transform: translateZ(-50px) rotateY(-180deg);
+    }
+    #mw-1-box-part-4{
+        transform: translateZ(50px);
+    }
+    #mw-1-box-part-5{
+        transform: translateY(-50px) rotateX(-90deg);
+    }
+    #mw-1-box-part-6{
+        transform: translateY(50px) rotateX(90deg);
+    }
+    #mw-1-box-part-6-shadow{
+        transform: translateY(80px) rotateX(90deg);
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        box-shadow: 0 0 50px 20px aliceblue;
+    }
+    
 }
