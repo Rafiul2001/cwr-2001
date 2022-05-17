@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("/images/coding_background_1.jpg");
+    background-image: url("coding_background_1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ body{
     font-size: 30px;
     width: 100%;
     text-align: center;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .all-buttons{
     display: flex;
